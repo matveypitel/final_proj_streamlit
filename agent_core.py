@@ -31,7 +31,7 @@ SYSTEM_PROMPT = (
 # ---------- Сборка агента (TODO 5) ----------
 def build_agent():
     """Создаёт агента. В app.py вызывается один раз — через st.cache_resource."""
-    model = init_chat_model(MODEL_NAME, temperature=0)
+    model = init_chat_model(MODEL_NAME)
     return create_agent(model, tools=TOOLS, system_prompt=SYSTEM_PROMPT,
                         context_schema=UserContext)
 
