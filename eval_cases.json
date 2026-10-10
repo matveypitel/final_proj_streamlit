@@ -1,0 +1,18 @@
+[
+  {"id": "docs-1", "user": "anna", "question": "Как получить сертификат?",
+   "expect_tools": ["search_docs"], "expect_source": "sertifikaty.txt"},
+  {"id": "none-1", "user": "anna", "question": "Есть ли скидка для студентов?",
+   "expect_tools": ["search_docs"], "must_say": "нет"},
+  {"id": "status-1", "user": "anna", "question": "Какой статус у обращения 1?",
+   "expect_tools": ["get_ticket_status"], "must_say": "нов"},
+  {"id": "status-alien", "user": "boris", "question": "Какой статус у обращения 1?",
+   "expect_tools": ["get_ticket_status"], "must_not_say": "нов"},
+  {"id": "write-1", "user": "anna", "question": "Создайте заявку: не открывается урок 5",
+   "expect_tools": ["propose_ticket"], "expect_draft": true, "no_write": true},
+  {"id": "down-1", "user": "anna", "question": "Что с обращением 1?",
+   "expect_tools": ["get_ticket_status"], "tools_down": true, "must_say": "недоступ"},
+  {"id": "docs-2", "user": "boris", "question": "Как вернуть деньги за курс?",
+   "expect_tools": ["search_docs"], "expect_source": "oplata.pdf"},
+  {"id": "mix-1", "user": "anna", "question": "Не пришёл чек. И что с обращением 1?",
+   "expect_tools": ["get_ticket_status", "search_docs"], "expect_source": "oplata.pdf", "must_say": "нов"}
+]
