@@ -9,3 +9,4 @@ __pycache__/
 
 # Журналы приложения
 */data/app_log.txt
+.devcontainer/
