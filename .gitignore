@@ -1,0 +1,12 @@
+# Секреты — никогда в репозиторий
+.env
+.streamlit/secrets.toml
+
+# Окружение и служебные файлы
+.venv/
+__pycache__/
+*.pyc
+
+# Журналы приложения
+*/data/app_log.txt
+.devcontainer/

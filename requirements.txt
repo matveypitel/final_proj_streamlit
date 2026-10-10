@@ -1,12 +1,10 @@
-# Версии, на которых проверены материалы курса (урок 35). Свои версии — из pip freeze.
-openai
-anthropic
-python-dotenv
-pypdf
-pydantic
-chromadb
-langchain
-langchain-anthropic
-langchain-openai
-langgraph
-streamlit
+openai==3.27.0
+anthropic==1.13.0
+python-dotenv==1.2.4
+pypdf==5.9.0
+chromadb==1.5.9
+langchain==1.4.3
+langchain-anthropic==1.7.5
+langchain-openai==1.7.0
+langgraph==1.2.12
+streamlit==1.64.0

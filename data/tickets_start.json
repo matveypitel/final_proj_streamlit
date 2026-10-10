@@ -1,0 +1,5 @@
+[
+  {"id": 1, "author": "Анна", "author_id": "anna", "text": "Не могу войти в личный кабинет", "category": "Доступ", "status": "new"},
+  {"id": 2, "author": "Борис", "author_id": "boris", "text": "Списали деньги дважды", "category": "Оплата", "status": "in_progress"},
+  {"id": 3, "author": "Анна", "author_id": "anna", "text": "Не открывается видео в третьем уроке", "category": "Обучение", "status": "closed"}
+]
